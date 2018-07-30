@@ -1,6 +1,6 @@
-FROM haproxy:1.7.3
+FROM haproxy
 
-ENV KEEPALIVED_VERSION 1:1.2.13-1
+ENV KEEPALIVED_VERSION 1:1.4.5
 
 RUN apt-get update && \
     apt-get install --no-install-recommends --no-install-suggests -y keepalived=${KEEPALIVED_VERSION} && \
